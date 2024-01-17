@@ -92,7 +92,7 @@ async def gen_thumb(videoid, user_id):
         image3 = changeImageSize(1280, 720, bg)
         image5 = image3.convert("RGBA")
         Image.alpha_composite(background, image5).save(f"cache/temp{videoid}.png")
-        
+
         Xcenter = youtube.width / 2
         Ycenter = youtube.height / 2
         x1 = Xcenter - 250
@@ -125,7 +125,7 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"Almortagel PLAYING",
+                f"STARTED PLAYING",
                 fill="white",
                 stroke_width=3,
                 stroke_fill="grey",
